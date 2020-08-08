@@ -1,5 +1,5 @@
 # Just-A-Few-Brews-Finder
-
+Cole added his name
 ## User Story
 As an Alcoholic Kanye Fan I would like to search for Breweries based on State, City or Zipcode so I can navigate my way to a new brewery
 
