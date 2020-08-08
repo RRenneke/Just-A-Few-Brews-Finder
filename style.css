@@ -1,0 +1,45 @@
+
+body {
+    background-color: brown ;
+}
+
+.hide{
+    display: none;
+}
+
+#header{
+    color: yellow;
+}
+
+div.backgroundQuote {
+    background-color: burlywood;
+    border: 2px solid black;
+  }
+  div.transboxQuote {
+    margin: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    opacity: 0.6;
+    padding: 20px;
+  }
+  div.transboxQuote p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  div.backgroundOnDirectionBox {
+    background-color: purple;
+    border: 2px solid black;
+  }
+  div.transboxOnDirectionBox {
+    margin: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    opacity: 0.6;
+  }
+  div.transboxOnDirectionBox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }
