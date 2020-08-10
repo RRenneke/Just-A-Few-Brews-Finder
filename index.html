@@ -11,33 +11,68 @@
 </head>
 
 <body>
+    <container class="homePage">
+        <!--each page will have same header styling-->
+        <h1 class="header">Just A Few Brews Finder</h1>
 
-<!-- gif will go here when we get one -->
-    <container class="show">
+        <!--Beer image will only be on home page-->
+        <p id="beerImg"> Need a beer image</p>
 
-        <h1 id="header">Just A Few Brews Finder</h1>
+        <!--Will Kanye quote can be constant or static -->
+        <div class="outerBox">
+        <div class="insideBox">
+        <p class = quoteKanye>Inseret quote here</p>
+        </div></div>
+        <br>
 
-        <p id="beerImg"> Beer Image will go here</p>
-        
-        <!--Box for Kanye quote -->
-        <div class="backgroundQuote">
-        <div class="transboxQuote">
-            <p>Inseret quote here</p>
+        <div class="outerBox">
+        <div class="insideBox">
+        <p id = directions>Click below to find a brewery using your city, state, or zip code. Enjoy the Kanye inspiration. HAPPY DRINKING!</p>
+        </div></div>
+        <br>
 
-            <br>
-
-
-<!--Box the directions for user will go-->
-        <div class="backgroundOnDirectionBox">
-        <div class="transboxOnDirectionBox">
-              <p>Click below to find a brewery . . .</p>
-        </div>
-
-
-        <button>Start Here</button>
+        <button class= "btn">Start Here</button>
     </container>
 
+    <container class="inputPage">
+        <h1 class="header">Enter One Or More</h1>
+
+        <div id="inputCity">Need Input Box for City</div>
+        <br>
+        
+        <div id="inputState">Need Input Box for State</div>
+        <br>
+        
+        <div id="inputZip">Need Input Box for Zip</div>
+        <br>
+        
+        <p> Four images side by side</p>
+        <br>
+        
+        <button class= "btn">Get Breweries</button>
+    </container>
+
+    <container class="resultsPage">
+        <h1 class="header">Brew Recomendations</h1>
+
+        <!--Will this be a constant? Can we have this class in two spots?-->    
+        <p class = "quoteKanye">Kanye quote here</p>
+        <br>
+
+        <!--Not sure how to display results-->
+        <div class ="serchResultName">Name</div>
+        <div class ="serchResultAddress">Address</div>
+        <div class ="serchResultURL">URL</div>
+    </container>
+
+    <container class="noResultsPage">
+        <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
+        
+        <p> Kanye Gif here</p>
+        <br>
+        
+        <button class= "btn">Start Here</button>
+    </container>
 
 </body>
-
 </html>

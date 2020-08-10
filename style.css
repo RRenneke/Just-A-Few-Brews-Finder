@@ -1,45 +1,36 @@
 
 body {
-    background-color: brown ;
+    background-color: #ee8b0ae7 ;
 }
 
-.hide{
-    display: none;
-}
-
-#header{
+.header{
     color: yellow;
 }
 
-div.backgroundQuote {
+div.outerBox {
     background-color: burlywood;
-    border: 2px solid black;
-  }
-  div.transboxQuote {
-    margin: 30px;
-    background-color: #FFFFFF;
-    border: 1px solid black;
-    opacity: 0.6;
-    padding: 20px;
-  }
-  div.transboxQuote p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
+    border:solid black;
   }
 
-  div.backgroundOnDirectionBox {
-    background-color: purple;
-    border: 2px solid black;
-  }
-  div.transboxOnDirectionBox {
-    margin: 30px;
+div.insideBox {
+    margin: 7px;
     background-color: #FFFFFF;
-    border: 1px solid black;
     opacity: 0.6;
+    padding: 5px;
   }
-  div.transboxOnDirectionBox p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-  }
+
+#quoteKanye {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#directions {
+  color: green;
+  font-weight: 900;
+  margin: auto;
+}
+
+.btn {
+  background-color: green;
+  padding: 10px;
+}
