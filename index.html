@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link bootstrap here>
+    <link pureCss here>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -36,16 +37,24 @@
 
     <container class="inputPage">
         <h1 class="header">Enter One Or More</h1>
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="city">City</label>
+                <input type="city" id="city" placeholder="city" />
+                <label for="stacked-state">State</label>
+                <select id="stacked-state">
+                    <option>ALABAMA</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                </select>
+                <label for="zip">ZipCode</label>
+                <input type="zip" id="zip" placeholder="zip" />
+                <label for="stacked-remember" class="pure-checkbox">
+                    <input type="checkbox" id="stacked-remember" /> Remember me</label>
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+            </fieldset>
+        </form>
 
-        <input id="inputCity" placeholder ="Enter City Here>"</input>
-        <br>
-        
-        <input id="inputState" placeholder ="Enter State Here"></input>
-        <br>
-        
-        <input id="inputZip" placeholder ="Enter Zip Code Here"></input>
-        <br>
-        
         <p> Four images side by side</p>
         <br>
         
