@@ -1,14 +1,14 @@
 
 body {
-    background-color: #ee8b0ae7 ;
+    background-color: hsla(12, 97%, 28%, 0.329) ;
 }
 
 .header{
-    color: yellow;
+    color: #ffc400;
 }
 
 div.outerBox {
-    background-color: burlywood;
+    background-color: rgba(230, 172, 14, 0.959);
     border:solid black;
   }
 
