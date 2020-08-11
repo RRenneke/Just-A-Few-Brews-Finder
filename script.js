@@ -2,15 +2,14 @@
     //API Kanye in container https://api.kanye.rest/
 
 var kanyeQuote = function () {
-
     $.ajax({
         url: 'https://api.kanye.rest/',
         method: "GET"
     }).then(function (response) {
+        var quote = response
         console.log(response)
+        quote.text()
     })
-
-
 };
 
 kanyeQuote()
