@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link bootstrap here>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <container class="homePage">
+        <!--each page will have same header styling-->
+        <h1 class="header">Just A Few Brews Finder</h1>
+
+        <!--Beer image will only be on home page-->
+        <p id="beerImg"> Need a beer image </p>
+        <img src="image location" alt="Picture of a nice cold beer"
+
+        <!--Will Kanye quote can be constant or static -->
+        <div class="outerBox">
+        <div class="insideBox">
+        <p class = quoteKanye>Inseret quote here</p>
+        </div></div>
+        <br>
+
+        <div class="outerBox">
+        <div class="insideBox">
+        <p id = directions>Click below to find a brewery using your city, state, or zip code. Enjoy the Kanye inspiration. HAPPY DRINKING!</p>
+        </div></div>
+        <br>
+
+        <button class= "btn">Start Here</button>
+    </container>
+
+    <container class="inputPage">
+        <h1 class="header">Enter One Or More</h1>
+
+        <input id="inputCity" placeholder ="Enter City Here>"</input>
+        <br>
+        
+        <input id="inputState" placeholder ="Enter State Here"></input>
+        <br>
+        
+        <input id="inputZip" placeholder ="Enter Zip Code Here"></input>
+        <br>
+        
+        <p> Four images side by side</p>
+        <br>
+        
+        <button class= "btn">Get Breweries</button>
+    </container>
+
+    <container class="resultsPage">
+        <h1 class="header">Brew Recomendations</h1>
+
+        <!--Will this be a constant? Can we have this class in two spots?-->    
+        <p class = "quoteKanye">Kanye quote here</p>
+        <br>
+
+        <!--Not sure how to display results-->
+        <div class ="serchResultName">Name</div>
+        <div class ="serchResultAddress">Address</div>
+        <div class ="serchResultURL">URL</div>
+    </container>
+
+    <container class="noResultsPage">
+        <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
+        
+        <p> Kanye Gif here</p>
+        <br>
+        
+        <button class= "btn">Start Here</button>
+    </container>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+
+body {
+    background-color: #ee8b0ae7 ;
+}
+
+.header{
+    color: yellow;
+}
+
+div.outerBox {
+    background-color: burlywood;
+    border:solid black;
+  }
+
+div.insideBox {
+    margin: 7px;
+    background-color: #FFFFFF;
+    opacity: 0.6;
+    padding: 5px;
+  }
+
+#quoteKanye {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#directions {
+  color: green;
+  font-weight: 900;
+  margin: auto;
+}
+
+.btn {
+  background-color: green;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
