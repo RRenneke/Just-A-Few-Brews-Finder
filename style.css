@@ -34,3 +34,7 @@ div.insideBox {
   background-color: green;
   padding: 10px;
 }
+
+.hide {
+  display: none;
+}

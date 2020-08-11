@@ -1,5 +1,21 @@
 // Start Page
     //API Kanye in container https://api.kanye.rest/
+
+var kanyeQuote = function () {
+
+    $.ajax({
+        url: 'https://api.kanye.rest/',
+        method: "GET"
+    }).then(function(response) {
+        console.log(response)
+    })
+
+
+};
+
+kanyeQuote()
+
+
     //start button 
         // hide first container and show search container
 
