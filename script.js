@@ -7,15 +7,16 @@ var kanyeQuote = function () {
         method: "GET"
     }).then(function (response) {
         var quote = response
+        // var a = $("<p>")
         console.log(response)
-        quote.text()
+        // quote.text()
     })
 };
 
 kanyeQuote()
 
 
-    //start button 
+//start button 
         // hide first container and show search container
 
 //Search Page
