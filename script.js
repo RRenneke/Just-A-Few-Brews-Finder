@@ -17,7 +17,9 @@ kanyeQuote()
 
     //start button 
         // hide first container and show search container
-
+var start = function(){
+    
+}
 //Search Page
     //Search on click
         //get values from input boxes - input.value
