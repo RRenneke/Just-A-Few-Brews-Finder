@@ -16,7 +16,10 @@
         <h1 class="header">Just A Few Brews Finder</h1>
 
         <!--Beer image will only be on home page-->
+
+
         <p style="text-align:center;"><img id="beerImgOne" src="Assets/pexels-engin-akyurt-1552630 (1).jpg"  alt="Picture of a nice cold beer"></p>
+
 
         <!--Will Kanye quote can be constant or static -->
         <div class="outerBox">
@@ -34,7 +37,7 @@
         <button class= "btnStart">Start Here</button>
     </container>
 
-    <container class="inputPage">
+    <container id="inputPage" class="inputPage">
         <h1 class="header">Enter One Or More</h1>
         <form class="pure-form pure-form-stacked">
             <fieldset>
@@ -56,7 +59,7 @@
                     <option>ILLINOIS</option>
                 </select>
                 <label for="zip">ZipCode</label>
-                <input type="zip" id="zip" placeholder="zip" />
+                <input type="zip" id="zip" placeholder="zip" 
              </fieldset>
         </form>
 
@@ -68,11 +71,11 @@
         </div>
         <br>
         
-        <button class= "btn">Get Breweries</button>
+        <button id="searchBtn"class= "btn">Get Breweries</button>
         <br>
     </container>
 
-    <container class="resultsPage">
+    <container id="resultsPage" class="resultsPage">
         <h1 class="header">Brew Recomendations</h1>
 
         <!--Will this be a constant? Can we have this class in two spots?-->    
@@ -85,7 +88,7 @@
         <div class ="serchResultURL" style="text-align:center">URL</div>
     </container>
 
-    <container class="noResultsPage">
+    <container id="noResultsPage" class="noResultsPage">
         <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
       
         <p style="text-align:center"><img id="sadKanye" src="Assets/PngItem_1391165.png" alt="Disapointed Kanye"></p>

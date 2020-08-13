@@ -38,7 +38,7 @@ $("#searchBtn").on("click", function (event) {
         }).then(function (response) {
             // calling renderButtons which handles the processing of our Cities array
             console.log(response);
-    
+            $("#inputPage").addClass("hide")
         });
 })
         //get values from input boxes - input.value
