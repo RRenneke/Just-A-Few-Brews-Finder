@@ -54,7 +54,7 @@ $("#searchBtn").on("click", function (event) {
 
     //new search button on click to go back to search page
 $(#startBtn).on("click", function(){
-    $(#homePage).a
+    $(#homePage).addClass
 })
     //if error show "No Sway!" giphy
 

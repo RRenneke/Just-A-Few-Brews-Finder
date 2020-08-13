@@ -5,11 +5,18 @@ body {
 
 .header{
     color: #ffc400;
+    text-align: center;
+}
+
+#beerImgOne {
+  height: 150px;
+  width: 200px;
 }
 
 div.outerBox {
     background-color: rgba(230, 172, 14, 0.959);
     border:solid black;
+    text-align: center;
   }
 
 div.insideBox {
@@ -17,24 +24,36 @@ div.insideBox {
     background-color: #FFFFFF;
     opacity: 0.6;
     padding: 5px;
+    text-align: center;
   }
 
 #quoteKanye {
   font-weight: bold;
   font-style: italic;
+  text-align: center;
 }
 
 #directions {
   color: green;
   font-weight: 900;
   margin: auto;
+  text-align: center;
 }
 
-.btn {
+.btnStart, .btnBack {
   background-color: green;
   padding: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
 
 .hide {
   display: none;
+}
+
+#sadKanye {
+  height: 200px;
+  width:250px;
+  text-align: center;
 }
