@@ -5,12 +5,8 @@ var kanyeQuote = function () {
     $.ajax({
         url: 'https://api.kanye.rest/',
         method: "GET"
-<<<<<<< HEAD
-    }).then(function(response) {
-=======
     }).then(function (response) {
         var quote = response
->>>>>>> cfaa0815807114977f23336e15c992861e6c27dd
         console.log(response)
         quote.text()
     })
