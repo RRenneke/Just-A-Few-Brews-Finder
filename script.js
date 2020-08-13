@@ -53,6 +53,10 @@ $("#searchBtn").on("click", function (event) {
     // website_url: "http://almanacbeer.com",
 
     //new search button on click to go back to search page
+$("#startBtn").on("click", function(){
+    $("#homePage").hide();
+    $("#inputPage").show();
+}); 
 
     //if error show "No Sway!" giphy
 
