@@ -6,16 +6,17 @@ var kanyeQuote = function () {
         url: 'https://api.kanye.rest/',
         method: "GET"
     }).then(function (response) {
-        var quote = response
+        var quote = response.quote
         console.log(response)
-        quote.text()
+        $("#quoteKanye").text(quote)
+
     })
 };
 
 kanyeQuote()
 
 
-    //start button 
+//start button 
         // hide first container and show search container
 var start = function(){
     
