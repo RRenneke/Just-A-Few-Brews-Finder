@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <container class="homePage">
+    <container class="homePage" id="homePage">
         <!--each page will have same header styling-->
         <h1 class="header">Just A Few Brews Finder</h1>
 
@@ -33,10 +33,10 @@
         </div></div>
         <br>
 
-        <button class= "btn">Start Here</button>
+        <button class= "btn" id="startBtn">Start Here</button>
     </container>
 
-    <container class="inputPage">
+    <container class="inputPage hide" id="inputPage">
         <h1 class="header">Enter One Or More</h1>
         <form class="pure-form pure-form-stacked">
             <fieldset>
@@ -71,7 +71,7 @@
         <button class= "btn">Get Breweries</button>
     </container>
 
-    <container class="resultsPage">
+    <container class="resultsPage hide" id="resultsPage">
         <h1 class="header">Brew Recomendations</h1>
 
         <!--Will this be a constant? Can we have this class in two spots?-->    
@@ -84,13 +84,13 @@
         <div class ="serchResultURL">URL</div>
     </container>
 
-    <container class="noResultsPage">
+    <container class="noResultsPage hide" id="noResultsPage">
         <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
         
         <p> Kanye Gif here</p>
         <br>
         
-        <button class= "btn">Start Here</button>
+        <button class= "btn startBtn">Start Here</button>
     </container>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>

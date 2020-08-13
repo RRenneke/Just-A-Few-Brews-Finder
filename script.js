@@ -19,7 +19,10 @@ kanyeQuote()
 //start button 
         // hide first container and show search container
 var start = function(){
-    
+$("#startBtn").on("click", function(){
+    $("#homePage").addClass("hide"); 
+$("#inputPage").removeClass("hide");
+})
 }
 //Search Page
     //Search on click
