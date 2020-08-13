@@ -38,7 +38,7 @@ $("#searchBtn").on("click", function (event) {
         }).then(function (response) {
             // calling renderButtons which handles the processing of our Cities array
             console.log(response);
-            $("#inputPage").addClass("hide")
+            $("#inputPage").hide();
         });
 })
         //get values from input boxes - input.value
@@ -53,6 +53,10 @@ $("#searchBtn").on("click", function (event) {
     // website_url: "http://almanacbeer.com",
 
     //new search button on click to go back to search page
+$("#startBtn").on("click", function(){
+    $("#homePage").hide();
+    $("#inputPage").show();
+}); 
 
     //if error show "No Sway!" giphy
 
