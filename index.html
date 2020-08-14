@@ -5,74 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link pureCss here>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.2/css/minstyle.io.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Just-A-Few-Brews</title>
 </head>
 
 <body>
     <container class="homePage" id="homePage">
-        <!--each page will have same header styling-->
-        <h1 class="header">Just A Few Brews Finder</h1>
+        <!-- used mini style to make responsive-->
+        <div class="ms_col--m-12-of-12 ms_col--centered">
+            <!--Home/Landing page-->
+            <h1 class="header">Just A Few Brews Finder</h1>
+            
+            <p style="text-align:center;">
+                <img id="beerImgOne" src="Assets/pexels-engin-akyurt-1552630 (1).jpg"  alt="Picture of a nice cold beer">
+            </p>
+            
+            <div class="outerBox">
+            <div class="insideBox">
+            <p class="quoteKanye">Insert quote here</p>
+            </div></div>
 
-        <!--Beer image will only be on home page-->
+            <div class="outerBox">
+            <div class="insideBox">
+            <p id = directions>Click below to find a brewery using your city, state, or zip code. Enjoy the Kanye inspiration. HAPPY DRINKING!</p>
+            </div></div>
 
-
-        <p style="text-align:center;"><img id="beerImgOne" src="Assets/pexels-engin-akyurt-1552630 (1).jpg"  alt="Picture of a nice cold beer"></p>
-
-
-        <!--Will Kanye quote can be constant or static -->
-        <div class="outerBox">
-        <div class="insideBox">
-        <p class="quoteKanye">Insert quote here</p>
-        </div></div>
-        <br>
-
-        <div class="outerBox">
-        <div class="insideBox">
-        <p id = directions>Click below to find a brewery using your city, state, or zip code. Enjoy the Kanye inspiration. HAPPY DRINKING!</p>
-        </div></div>
-        <br>
-
-        <button class= "btnStart" id="startBtn">Start Here</button>
+            <button style="text-align:center" class="btnStart" id="startBtn">Start Here</button>
+        </div>
     </container>
 
     <container class="inputPage hide" id="inputPage">
-        <h1 class="header">Enter One Or More</h1>
-        <form class="pure-form pure-form-stacked">
-            <fieldset>
-                <label for="city">City</label>
-                <input type="city" id="city" placeholder="city" />
-                <label for="stacked-state">State</label>
-                <select id="stacked-state">
-                    <option>ALABAMA</option>
-                    <option>ALASKA</option>
-                    <option>ARKANSAS</option>
-                    <option>CALIFORNIA</option>
-                    <option>COLORODO</option>
-                    <option>CONNECTICUT</option>
-                    <option>DELAWARE</option>
-                    <option>FLORIDA</option>
-                    <option>GEORGIA</option>
-                    <option>HAWAII</option>
-                    <option>IDAHO</option>
-                    <option>ILLINOIS</option>
-                </select>
-                <label for="zip">ZipCode</label>
-                <input type="zip" id="zip" placeholder="zip"> 
-             </fieldset>
-        </form>
-
-        <div>
-        <img src="Assets/kanye bear.png" style="float:left" width="75" height="75">
-        <img src="Assets/PngItem_58706.png" style="float:left" width="75" height="75">
-        <img src="Assets/PngItem_3713836.png" style="float:left" width="75" height="75">
-        <img src="Assets/PngItem_59894.png" style="float:left" width="75" height="75">
-        </div>
-        <br>
+        <div class="ms_col--m-12-of-12 ms_col--centered">
+        <h1 class="header">Where will you be driNkinG?</h1>
         
-        <button id="searchBtn"class= "btn">Get Breweries</button>
-        <br>
+        <div>
+            <form class="pure-form pure-form-aligned">
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="aligned-name"></label>
+                        <input type="text" id="city" placeholder="Enter a City"/>
+                        <span class="pure-form-message-inline">Enter the city you want to drink. Spell correctly.</span>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="stacked-state"></label>
+                        <select id="stacked-state">
+                            <option></option>
+                        </select>
+                        <span class="pure-form-message-inline">Or select the state you want to drink. Choose wisely.</span>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="aligned-name"></label>
+                        <input type="text" id="aligned-name" placeholder="Enter a 5 digit zip code"/>
+                        <span class="pure-form-message-inline">Or enter the 5 digit zip code. Drink responsibly.</span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div style="text-align:center">
+        <img src="Assets/kanye bear.png" width="50" height="50">
+        <img src="Assets/PngItem_58706.png" width="50" height="50">
+        <img src="Assets/PngItem_3713836.png" width="50" height="50">
+        <img src="Assets/PngItem_59894.png" width="50" height="50">
+        </div>
+
+        <button style="text-align:center" class="btnStart" id="searchBtn">Click to get Breweries</button>
+
+      </div>
     </container>
 
     <container class="resultsPage hide" id="resultsPage">
@@ -95,7 +98,7 @@
 
         <br>
         
-        <button class= "btnBack">Go Back</button>
+        <button style="text-align:center" class= "btnBack">Go Back</button>
     </container>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
