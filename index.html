@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.2/css/minstyle.io.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Just-A-Few-Brews</title>
+    <title>Just-A-Few-Brews Finder</title>
 </head>
 
 <body>
@@ -79,27 +79,28 @@
     </container>
 
     <container class="resultsPage hide" id="resultsPage">
-        <h1 class="header">Brew Recomendations</h1>
-
-        <!--Will this be a constant? Can we have this class in two spots?-->    
-        <p class = "quoteKanye" style="text-align:center">Kanye quote here</p>
-        <br>
-
-        <!--Not sure how to display results-->
-        <div class ="serchResultName" style="text-align:center">Name</div>
-        <div class ="serchResultAddress" style="text-align:center">Address</div>
-        <div class ="serchResultURL" style="text-align:center">URL</div>
+        <!--Page for if a match is found on zip, state, or city-->
+        <div class="ms_col--m-12-of-12 ms_col--centered"></div>
+            <h1 class="header">Brew Recomendations</h1>
+            <p class = "quoteKanye" style="text-align:center">Kanye quote here</p>
+            <br>
+            <!--API results-->
+            <div class ="serchResultName" style="text-align:center">Name</div>
+            <div class ="serchResultAddress" style="text-align:center">Address</div>
+            <div class ="serchResultURL" style="text-align:center">URL</div>
+        </div>
     </container>
 
     <container class="noResultsPage hide" id="noResultsPage">
-        <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
-      
-        <p style="text-align:center"><img id="sadKanye" src="Assets/PngItem_1391165.png" alt="Disapointed Kanye"></p>
-
-        <br>
-        
-        <button style="text-align:center" class= "btnBack">Go Back</button>
+        <!--Page for if no breweries are found from the city, state or zip code-->
+        <div class="ms_col--m-12-of-12 ms_col--centered"></div>
+            <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
+            <p style="text-align:center"><img id="sadKanye" src="Assets/PngItem_1391165.png" alt="Disapointed Kanye"></p>
+            <br>
+            <button style="text-align:center" class= "btnBack">Go Back</button>
+        </div>
     </container>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
 </body>
