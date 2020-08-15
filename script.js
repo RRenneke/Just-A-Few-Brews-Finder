@@ -46,6 +46,41 @@ $("#searchBtn").on("click", function (event) {
         // calling renderButtons which handles the processing of our Cities array
         console.log(response);
         // $("#inputPage").hide();
+
+        function addResult() {
+
+            // empties previously added cities
+            $("#result").empty();
+        
+            // Looping through the array of cities
+            for (var i = 0; i < response.length; i++) {
+                
+                var brewName = response[i].name
+                var brewStreet = response[i].street
+                var brewCity = response[i].city
+                var brewState = response[i].state
+                var brewZip = response[i].postal_code
+                var brewPhone = response[i].phone
+                var brewAddress = brewStreet + ", " + brewCity + ", " +brewState + ", "+brewZip
+                var brewWeb = response[i].website_url
+
+                // Then dynamicaly generating buttons for each city in the array.
+                var a = $("<div>");
+                var displayName = $("<div>").text(brewName);
+                var displayAddress =$("<div>").text(brewAddress);
+                var displayPhone = $("<div>").text("Phone: " + brewPhone);
+                var displayWeb = $("<a>").text(brewWeb)
+                // Adding a data-attribute with a value of the city at index i
+                a.addClass("row")
+                a.append(displayName)
+                a.append(displayAddress)
+                a.append(displayPhone)
+                a.append(displayWeb)
+                $("#result").append(a);
+
+            }
+        }
+        addResult()
     });
 });
 
