@@ -43,7 +43,12 @@ $("#searchBtn").on("click", function (event) {
 })
         //get values from input boxes - input.value
         //append https://api.openbrewerydb.org/breweries? + &by_city=(city input box) + &by_state=(state input box) &by_postal=(zip code input box) 
-        //then show results page
+        //then show results page 
+        $("#getBreweries").on("click", function(){
+            $("#resultsPage").show();
+            $("#inputPage").hide(); 
+            if 
+        }); 
 
 //Results Page
     //display search results with:
