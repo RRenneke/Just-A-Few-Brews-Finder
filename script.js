@@ -36,7 +36,7 @@ $("#searchBtn").on("click", function (event) {
     })
     var postal = $("#zip").val();
 
-    var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + city + "&by_state=" + state;
+    var queryURL = "https://api.openbrewerydb.org/breweries?by_city=" + city + "&by_state=" + state + "&by_postal=" + postal;
     console.log(queryURL)
     // Creating an AJAX call for the specific movie button being clicked
     $.ajax({
