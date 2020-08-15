@@ -52,7 +52,10 @@ $("#searchBtn").on("click", function (event) {
 //get values from input boxes - input.value 
 
 //append https://api.openbrewerydb.org/breweries? + &by_city=(city input box) + &by_state=(state input box) &by_postal=(zip code input box) 
-
+$("#searchBtn").click(function (){
+    document.getElementById("city").value; 
+    $()
+})
 //then show results page 
 
 
