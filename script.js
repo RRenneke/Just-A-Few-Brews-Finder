@@ -10,7 +10,7 @@ var kanyeQuote = function () {
     }).then(function (response) {
         var quote = response.quote
         console.log(response)
-        $(".quoteKanye").text(quote)
+        $(".quoteKanye").text("'" + quote + "' -Kanye")
 
     })
 };
