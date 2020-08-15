@@ -36,9 +36,13 @@
         </div>
     </container>
 
+    <!--Enter City,State or ZipCode page -->
+
     <container class="inputPage hide" id="inputPage">
         <div class="ms_col--m-12-of-12 ms_col--centered">
-        <h1 class="header">Where will you be driNkinG?</h1>
+        <h1 class="header"> Where will you be drinking?</h1>
+
+        <h1 style="color:lightskyblue;">Please enter your city and state!</h1>
         
         <div>
             <form class="pure-form pure-form-aligned">
@@ -46,7 +50,7 @@
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
                         <input type="text" id="city" placeholder="Enter a City"/>
-                        <span class="pure-form-message-inline">Enter the city you want to drink. Spell correctly.</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;">Spell your city correctly!</span>
                     </div>
 
                     <div class="pure-control-group">
@@ -54,13 +58,16 @@
                         <select id="stacked-state">
                             <option></option>
                         </select>
-                        <span class="pure-form-message-inline">Or select the state you want to drink. Choose wisely.</span>
-                    </div>
+                        <span class="pure-form-message-inline"> <p style="color:white;">Select State</span>
+                       </div>
+
+                       <h1 style="color:Gold;">Or</h1>
 
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
+
                         <input type="text" id="zip" placeholder="Enter a 5 digit zip code"/>
-                        <span class="pure-form-message-inline">Or enter the 5 digit zip code. Drink responsibly.</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;"> 5 digit zip code. Please drink responsibly!</span>
                     </div>
                 </fieldset>
             </form>
