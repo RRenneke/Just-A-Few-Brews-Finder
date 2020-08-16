@@ -64,18 +64,20 @@ $("#searchBtn").on("click", function (event) {
                 var brewAddress = brewStreet + ", " + brewCity + ", " +brewState + ", "+brewZip
                 var brewWeb = response[i].website_url
 
-                // Then dynamicaly generating buttons for each city in the array.
+                // Then dynamicaly adds div Name, Address, Phone and Website of each result.
                 var a = $("<div>");
                 var displayName = $("<div>").text(brewName);
                 var displayAddress =$("<div>").text(brewAddress);
                 var displayPhone = $("<div>").text("Phone: " + brewPhone);
-                var displayWeb = $("<a>").text(brewWeb)
+                var displayWeb = $("<a>").text(brewWeb);
+                //adds attribute to 
+                var Web = $(displayWeb).attr("href", brewWeb);
                 // Adding a data-attribute with a value of the city at index i
-                a.addClass("row")
-                a.append(displayName)
-                a.append(displayAddress)
-                a.append(displayPhone)
-                a.append(displayWeb)
+                a.addClass("row");
+                a.append(displayName);
+                a.append(displayAddress);
+                a.append(displayPhone);
+                a.append(Web);
                 $("#result").append(a);
 
             }
