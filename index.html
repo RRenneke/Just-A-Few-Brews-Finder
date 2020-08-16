@@ -18,8 +18,13 @@
             <!--Home/Landing page-->
             <h1 class="header">Just A Few Brews Finder</h1>
             
-            <p style="text-align:center;">
-                <img id="beerImgOne" src="Assets/pexels-engin-akyurt-1552630 (1).jpg"  alt="Picture of a nice cold beer">
+            <div class="container">
+                <img src="Assets/pexels-engin-akyurt-1552630 (1).jpg" alt="Beer" class="image">
+                <div class="overlay">
+                  <div class="text">The glass is neither half empty, nor half full... It just needs to be topped off!</div>
+                </div>
+              </div>
+            
             </p>
             
             <div class="outerBox">
@@ -41,7 +46,6 @@
     <container class="inputPage hide" id="inputPage">
         <div class="ms_col--m-12-of-12 ms_col--centered">
         <h1 class="header"> Where will you be drinking?</h1>
-
         <h1 style="color:lightskyblue;">Please enter your city and state!</h1>
         
         <div>
@@ -61,7 +65,7 @@
                         <span class="pure-form-message-inline"> <p style="color:white;">Select State</span>
                        </div>
 
-                       <h1 style="color:lightskyblue;">Or</h1>
+                    <h1 style="color:lightskyblue;">Or</h1>
 
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
@@ -74,10 +78,10 @@
         </div>
 
         <div style="text-align:center">
-        <img src="Assets/kanye bear.png" width="50" height="50">
-        <img src="Assets/PngItem_58706.png" width="50" height="50">
-        <img src="Assets/PngItem_3713836.png" width="50" height="50">
-        <img src="Assets/PngItem_59894.png" width="50" height="50">
+            <img src="Assets/kanye bear.png" class="pageTwoImages">
+            <img src="Assets/PngItem_58706.png" class="pageTwoImages">
+            <img src="Assets/PngItem_3713836.png" class="pageTwoImages">
+            <img src="Assets/PngItem_59894.png" class="pageTwoImages">
         </div>
 
         <button style="text-align:center" class="btnStart" id="searchBtn">Click to get Breweries</button>
@@ -93,18 +97,19 @@
         <br>
 
         <!--Not sure how to display results-->
+        <container class="resultsBox">
         <div class="row" id="result">
             <div id="serchResultName" class ="serchResultName" style="text-align:center">Name</div>
             <div id="serchResultAddress" class ="serchResultAddress" style="text-align:center">Address</div>
             <div id="searchResultPhone" class="searchResultPhone" style="text-align:center">Phone</div>
             <div id="serchResultURL" class ="serchResultURL" style="text-align:center">URL</div>
         </div>
+    </container>
 
     </container>
 
     <container class="noResultsPage hide" id="noResultsPage">
         <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
-      
         <p style="text-align:center"><img id="sadKanye" src="https://media.giphy.com/media/14tvbepZ8vhU40/giphy.gif" alt="Disapointed Kanye"></p>
 
         <br>
