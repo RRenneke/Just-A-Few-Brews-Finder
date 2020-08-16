@@ -81,7 +81,7 @@ $("#searchBtn").on("click", function (event) {
                     //adds attribute to displayed <a> to make it link
                     var Web = $(displayWeb).attr("href", brewWeb);
                     // Appends result info
-                    a.addClass("row");
+                    a.addClass("row resultsBox");
                     a.append(displayName);
                     a.append(displayAddress);
                     a.append(displayPhone);
