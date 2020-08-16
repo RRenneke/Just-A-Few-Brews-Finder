@@ -92,6 +92,7 @@ $("#searchBtn").on("click", function (event) {
         }
         addResult()
     });
+    kanyeQuote()
 });
 
 
