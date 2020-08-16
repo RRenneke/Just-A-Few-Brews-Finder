@@ -1,63 +1,62 @@
-
 body {
-    background-color: rgba(107, 26, 3, 0.733) ;
+  background-color: rgba(107, 26, 3, 0.733) ;
 }
 
 .header{
-    color: #ffc400;
-    text-align: center;
+  color: #ffc400;
+  text-align: center;
 }
 
 #beerImgOne {
-  height: 150px;
-  width: 200px;
+height: 150px;
+width: 200px;
 }
 
 div.outerBox {
-    background-color: rgba(230, 172, 14, 0.959);
-    border:solid black;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
+  background-color: rgba(230, 172, 14, 0.959);
+  border:solid black;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
 div.insideBox {
-    margin: 7px;
-    background-color: #FFFFFF;
-    opacity: 0.6;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-  }
+  margin: 7px;
+  background-color: #FFFFFF;
+  opacity: 0.6;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
 
 #quoteKanye {
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
+font-weight: bold;
+font-style: italic;
+text-align: center;
 }
 
 #directions {
-  color: rgb(185, 17, 17);
-  font-weight: 900;
-  margin: auto;
-  text-align: center;
+color: rgb(185, 17, 17);
+font-weight: 900;
+margin: auto;
+text-align: center;
 }
 
 .btnStart, .btnGetBeweries, .btnBack {
-  background-color: rgb(110, 150, 202);
-  padding: 10px;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-  margin-top: 15px;
+background-color: rgb(110, 150, 202);
+padding: 10px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+margin-top: 15px;
 }
 
 .hide {
-  display: none;
+display: none;
 }
 
 #sadKanye {
-  height: 200px;
-  width:250px;
-  text-align: center;
+height: 200px;
+width:250px;
+text-align: center;
 }

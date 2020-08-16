@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.2/css/minstyle.io.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Just-A-Few-Brews Finder</title>
+    <title>Just-A-Few-Brews</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             
             <div class="outerBox">
             <div class="insideBox">
-            <p class="quoteKanye">Insert quote here</p>
+            <p class="quoteKanye">-Kanye</p>
             </div></div>
 
             <div class="outerBox">
@@ -36,9 +36,13 @@
         </div>
     </container>
 
+    <!--Enter City,State or ZipCode page -->
+
     <container class="inputPage hide" id="inputPage">
         <div class="ms_col--m-12-of-12 ms_col--centered">
-        <h1 class="header">Where will you be driNkinG???</h1>
+        <h1 class="header"> Where will you be drinking?</h1>
+
+        <h1 style="color:lightskyblue;">Please enter your city and state!</h1>
         
         <div>
             <form class="pure-form pure-form-aligned">
@@ -46,7 +50,7 @@
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
                         <input type="text" id="city" placeholder="Enter a City"/>
-                        <span class="pure-form-message-inline">Enter the city you want to drink. Spell correctly.</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;">Spell your city correctly!</span>
                     </div>
 
                     <div class="pure-control-group">
@@ -54,13 +58,16 @@
                         <select id="stacked-state">
                             <option></option>
                         </select>
-                        <span class="pure-form-message-inline">Or select the state you want to drink. Choose wisely.</span>
-                    </div>
+                        <span class="pure-form-message-inline"> <p style="color:white;">Select State</span>
+                       </div>
+
+                       <h1 style="color:lightskyblue;">Or</h1>
 
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
-                        <input type="text" id="aligned-name" placeholder="Enter a 5 digit zip code"/>
-                        <span class="pure-form-message-inline">Or enter the 5 digit zip code. Drink responsibly.</span>
+
+                        <input type="text" id="zip" placeholder="Enter a 5 digit zip code"/>
+                        <span class="pure-form-message-inline"> <p style="color:white;"> 5 digit zip code. Please drink responsibly!</span>
                     </div>
                 </fieldset>
             </form>
@@ -78,29 +85,32 @@
       </div>
     </container>
 
-    <container class="resultsPage hide" id="resultsPage">
-        <!--Page for if a match is found on zip, state, or city-->
-        <div class="ms_col--m-12-of-12 ms_col--centered"></div>
-            <h1 class="header">Brew Recomendations</h1>
-            <p class = "quoteKanye" style="text-align:center">Kanye quote here</p>
-            <br>
-            <!--API results-->
-            <div class ="serchResultName" style="text-align:center">Name</div>
-            <div class ="serchResultAddress" style="text-align:center">Address</div>
-            <div class ="serchResultURL" style="text-align:center">URL</div>
+    <container class="resultsPage" id="resultsPage">
+        <h1 class="header">Brew Recomendations</h1>
+
+        <!--Will this be a constant? Can we have this class in two spots?-->    
+        <p class = "quoteKanye" style="text-align:center">-Kanye</p>
+        <br>
+
+        <!--Not sure how to display results-->
+        <div class="row" id="result">
+            <div id="serchResultName" class ="serchResultName" style="text-align:center">Name</div>
+            <div id="serchResultAddress" class ="serchResultAddress" style="text-align:center">Address</div>
+            <div id="searchResultPhone" class="searchResultPhone" style="text-align:center">Phone</div>
+            <div id="serchResultURL" class ="serchResultURL" style="text-align:center">URL</div>
         </div>
+
     </container>
 
-    <container  id="noResultsPage">
-        <!--Page for if no breweries are found from the city, state or zip code-->
-        <div class="ms_col--m-12-of-12 ms_col--centered"></div>
-            <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
-            <p style="text-align:center"><img id="sadKanye" src="https://media.giphy.com/media/14tvbepZ8vhU40/giphy.gif" alt="Disapointed Kanye"></p>
-            <br>
-            <button style="text-align:center" class= "btnBack">Go Back</button>
-        </div>
-    </container>
+    <container class="noResultsPage hide" id="noResultsPage">
+        <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
+      
+        <p style="text-align:center"><img id="sadKanye" src="https://media.giphy.com/media/14tvbepZ8vhU40/giphy.gif" alt="Disapointed Kanye"></p>
 
+        <br>
+        
+        <button style="text-align:center" class= "btnBack">Go Back</button>
+    </container>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
 </body>
