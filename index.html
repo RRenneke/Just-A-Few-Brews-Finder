@@ -45,16 +45,17 @@
 
     <container class="inputPage hide" id="inputPage">
         <div class="ms_col--m-12-of-12 ms_col--centered">
-        <h1 class="header"> Where will you be drinking?</h1>
-        <h1 style="color:lightskyblue;">Please enter your city and state!</h1>
+        <h1 class="header" id="top"> Where will you be drinking?</h1>
         
+        <article>
         <div>
-            <form class="pure-form pure-form-aligned">
+            <form class="pure-form pure-form-aligned" id="inputArea">
+                <p class="instructions">Please enter your city and state!</p>
                 <fieldset>
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
-                        <input type="text" id="city" placeholder="Enter a City"/>
-                        <span class="pure-form-message-inline"> <p style="color:white;">Spell your city correctly!</span>
+                        <input type="text" id="city" placeholder="Enter a City here."/>
+                        <span class="pure-form-message-inline"> <p style="color:white;"></span>
                     </div>
 
                     <div class="pure-control-group">
@@ -62,16 +63,16 @@
                         <select id="stacked-state">
                             <option></option>
                         </select>
-                        <span class="pure-form-message-inline"> <p style="color:white;">Select State</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;">Select a State</span>
                        </div>
 
-                    <h1 style="color:lightskyblue;">Or</h1>
+                    <p class="instructions">Or enter your zip code.</p>
 
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
 
-                        <input type="text" id="zip" placeholder="Enter a 5 digit zip code"/>
-                        <span class="pure-form-message-inline"> <p style="color:white;"> 5 digit zip code. Please drink responsibly!</span>
+                        <input type="text" id="zip" placeholder="Enter a 5 digit zip code here."/>
+                        <span class="pure-form-message-inline"> <p style="color:white;"></span>
                     </div>
                 </fieldset>
             </form>
@@ -84,17 +85,17 @@
             <img src="Assets/PngItem_59894.png" class="pageTwoImages">
         </div>
 
-        <button style="text-align:center" class="btnStart" id="searchBtn">Click to get Breweries</button>
+        <button style="text-align:center" class="btnStart" id="searchBtn">Get Breweries</button>
 
       </div>
     </container>
 
     <container class="resultsPage hide" id="resultsPage">
-        <h1 class="header">Brew Recomendations</h1>
+    
 
         <!--Will this be a constant? Can we have this class in two spots?-->    
-        <p class = "quoteKanye" style="text-align:center">-Kanye</p>
-        <br>
+        <p class ="quoteKanye">-Kanye</p>
+        <h1 class="header">Brew Recomendations</h1>
 
         <!--Not sure how to display results-->
         <container>
@@ -104,6 +105,10 @@
             <div id="searchResultPhone" class="searchResultPhone" style="text-align:center">Phone</div>
             <div id="serchResultURL" class ="serchResultURL" style="text-align:center">URL</div>
         </div>
+    </article>
+    <div class="back-to-top-wrapper">
+        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+      </div>
     </container>
 
     </container>

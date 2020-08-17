@@ -13,6 +13,8 @@ div.outerBox {
   text-align: center;
   border-radius: 10px;
   margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 div.insideBox {
@@ -22,12 +24,15 @@ div.insideBox {
   padding: 5px;
   text-align: center;
   border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-#quoteKanye {
+.quoteKanye {
 font-weight: bold;
 font-style: italic;
 text-align: center;
+color:black;
 }
 
 #directions {
@@ -95,4 +100,36 @@ display: none;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   word-wrap: break-word;
+}
+
+.resultsBox {
+  border: black;
+  border-top-style: dashed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 15px;
+}
+
+.back-to-top-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #D6E3F0;
+  padding: 0.25rem;
+}
+
+#inputArea {
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.instructions {
+  color:lightskyblue;
+  font-family: fantasy;
+  font-size: 20px;
 }
