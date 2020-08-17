@@ -7,6 +7,8 @@
     <link pureCss here>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.2/css/minstyle.io.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Just-A-Few-Brews</title>
 </head>
@@ -89,7 +91,7 @@
 
       </div>
     </container>
-
+    <button style="text-align:center" class="btnStart" id="tryAgain">Try another search</button>
     <container class="resultsPage hide" id="resultsPage">
     
 
@@ -106,9 +108,7 @@
             <div id="serchResultURL" class ="serchResultURL" style="text-align:center">URL</div>
         </div>
     </article>
-    <div class="back-to-top-wrapper">
-        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
-      </div>
+  
     </container>
 
     </container>
@@ -116,8 +116,13 @@
     <container class="noResultsPage hide" id="noResultsPage">
         <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
         <p style="text-align:center"><img id="sadKanye" src="https://media.giphy.com/media/14tvbepZ8vhU40/giphy.gif" alt="Disapointed Kanye"></p>
-    </container>
+    </container> 
+<br><br> <div class="scrollUp">
+    <button class="btnStart" id="scrollToTop">Back to Top</button>
+</div> 
+<br>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" style="text-align: center;"></script>
 </body>
 </html>

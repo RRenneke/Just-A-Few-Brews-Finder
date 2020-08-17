@@ -15,6 +15,8 @@ var kanyeQuote = function () {
 
 kanyeQuote()
 
+$("#scrollToTop").hide(); 
+$("#tryAgain").hide();
 
 //start button 
 // hide first container and show search container
@@ -28,6 +30,11 @@ $("#searchBtn").on("click", function (event) {
     //hides resultsPage and noResultsPage at start of search
     $("#noResultsPage").hide()
     $(".resultsPage").hide()
+    $("#scrollToTop").show() 
+    
+     
+    
+
 
     // This line will grab the text from the input box
     var city = $("#city").val().trim();
@@ -52,6 +59,7 @@ $("#searchBtn").on("click", function (event) {
         //if function to display noResultsPage if no results found
         if (response.length === 0) {
             $("#noResultsPage").show();
+            $("#scrollToTop").hide();
         //displays resultsPage if there are matching results
         } else{
             $(".resultsPage").show()
@@ -96,12 +104,36 @@ $("#searchBtn").on("click", function (event) {
 });
 
 
+
 //new search button on click to go back to search page
 $("#startBtn").on("click", function () {
     $("#homePage").hide();
-    $("#inputPage").show();
-});
+    $("#inputPage").show(); 
+    $("#tryAgain").hide();
+}); 
 
+var results = document.getElementsByClassName("resultsPage")
+function scrollToBottom() {
+    elmnt.scrollIntoView(false); // Bottom
+  }
+$("#searchBtn").on("click", function (){
+    $("#tryAgain").show(); 
+    $("#inputPage").hide();
+    
+})
+$("#scrollToTop").on("click", function (){
+    window.scrollTo(0,0);
+})  
+
+$("#tryAgain").on("click", function(){
+    $("#inputPage").show(); 
+    $(".resultsPage").hide(); 
+    $("#scrollToTop").hide(); 
+    $(".btnStart").hide(); 
+    $("#noResultsPage").hide(); 
+    $("#searchBtn").show();
+
+}) 
 
 //if error show "No Sway!" giphy
 
