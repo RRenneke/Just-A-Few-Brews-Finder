@@ -81,7 +81,7 @@ $("#searchBtn").on("click", function (event) {
                     //adds attribute to displayed <a> to make it link
                     var Web = $(displayWeb).attr("href", brewWeb);
                     // Appends result info
-                    a.addClass("row");
+                    a.addClass("row resultsBox");
                     a.append(displayName);
                     a.append(displayAddress);
                     a.append(displayPhone);
@@ -94,6 +94,35 @@ $("#searchBtn").on("click", function (event) {
     });
     kanyeQuote()
 });
+
+
+//new search button on click to go back to search page
+$("#startBtn").on("click", function () {
+    $("#homePage").hide();
+    $("#inputPage").show();
+});
+
+
+//if error show "No Sway!" giphy
+
+var statesList = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Federated States of Micronesia', 'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Marshall Islands', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio', 'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+function addSates() {
+
+    // Looping through the array of States
+    for (var i = 0; i < statesList.length; i++) {
+
+        // Then dynamicaly generating <option> for each State
+        var a = $("<option>");
+        // Adding a data-attribute with a value of the State at index i
+        a.attr("data-name", statesList[i]);
+        // Providing text with a value of the State at index i
+        a.text(statesList[i]);
+        // Adding the State Name to list
+        $("#stacked-state").append(a);
+    }
+};
+
+addSates();
 
 
 //new search button on click to go back to search page
