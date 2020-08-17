@@ -1,63 +1,98 @@
-
 body {
-    background-color: rgba(107, 26, 3, 0.733) ;
+  background-color: rgba(107, 26, 3, 0.733) ;
 }
 
 .header{
-    color: #ffc400;
-    text-align: center;
-}
-
-#beerImgOne {
-  height: 150px;
-  width: 200px;
+  color: #ffc400;
+  text-align: center;
 }
 
 div.outerBox {
-    background-color: rgba(230, 172, 14, 0.959);
-    border:solid black;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
+  background-color: rgba(230, 172, 14, 0.959);
+  border:solid black;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
 div.insideBox {
-    margin: 7px;
-    background-color: #FFFFFF;
-    opacity: 0.6;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-  }
+  margin: 7px;
+  background-color: #FFFFFF;
+  opacity: 0.6;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
 
 #quoteKanye {
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
+font-weight: bold;
+font-style: italic;
+text-align: center;
 }
 
 #directions {
-  color: rgb(185, 17, 17);
-  font-weight: 900;
-  margin: auto;
-  text-align: center;
+color: rgb(185, 17, 17);
+font-weight: 900;
+margin: auto;
+text-align: center;
 }
 
 .btnStart, .btnGetBeweries, .btnBack {
-  background-color: rgb(110, 150, 202);
-  padding: 10px;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-  margin-top: 15px;
+background-color: rgb(110, 150, 202);
+padding: 10px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+margin-top: 15px;
 }
 
 .hide {
-  display: none;
+display: none;
 }
 
-#sadKanye {
-  height: 200px;
-  width:250px;
+.pageTwoImages {
+  width: 50px;
+  height: 50px;
+  padding-left: 40px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
   text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(110, 150, 202);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .9s ease;
+  border-color: white;
+  border-radius: 20px;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  font-size: 17px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  word-wrap: break-word;
 }

@@ -7,6 +7,8 @@
     <link pureCss here>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/minstyle.io@1.0.2/css/minstyle.io.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Just-A-Few-Brews</title>
 </head>
@@ -18,8 +20,13 @@
             <!--Home/Landing page-->
             <h1 class="header">Just A Few Brews Finder</h1>
             
-            <p style="text-align:center;">
-                <img id="beerImgOne" src="Assets/pexels-engin-akyurt-1552630 (1).jpg"  alt="Picture of a nice cold beer">
+            <div class="container">
+                <img src="Assets/pexels-engin-akyurt-1552630 (1).jpg" alt="Beer" class="image">
+                <div class="overlay">
+                  <div class="text">The glass is neither half empty, nor half full... It just needs to be topped off!</div>
+                </div>
+              </div>
+            
             </p>
             
             <div class="outerBox">
@@ -40,9 +47,8 @@
 
     <container class="inputPage hide" id="inputPage">
         <div class="ms_col--m-12-of-12 ms_col--centered">
-        <h1 class="header"> Where will you be drinking?</h1>
-
-        <h1 style="color:lightskyblue;">Please enter your city and state!</h1>
+        <h1 class="header bigText" > Where will you be drinking?</h1>
+        <h1 class="bigText" style="color:lightskyblue;">Please enter your city and state!</h1>
         
         <div>
             <form class="pure-form pure-form-aligned">
@@ -50,7 +56,7 @@
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
                         <input type="text" id="city" placeholder="Enter a City"/>
-                        <span class="pure-form-message-inline"> <p style="color:white;">Spell your city correctly!</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;" class="bigText">Spell your city correctly!</span>
                     </div>
 
                     <div class="pure-control-group">
@@ -58,56 +64,64 @@
                         <select id="stacked-state">
                             <option></option>
                         </select>
-                        <span class="pure-form-message-inline"> <p style="color:white;">Select State</span>
+                        <span class="pure-form-message-inline bigText"> <p style="color:white;">Select State</span>
                        </div>
 
-                       <h1 style="color:Gold;">Or</h1>
+                    <h1 class="bigText" style="color:lightskyblue;">Or</h1>
 
                     <div class="pure-control-group">
                         <label for="aligned-name"></label>
 
                         <input type="text" id="zip" placeholder="Enter a 5 digit zip code"/>
-                        <span class="pure-form-message-inline"> <p style="color:white;"> 5 digit zip code. Please drink responsibly!</span>
+                        <span class="pure-form-message-inline"> <p style="color:white;" class="bigText"> 5 digit zip code. Please drink responsibly!</span>
                     </div>
                 </fieldset>
             </form>
         </div>
 
         <div style="text-align:center">
-        <img src="Assets/kanye bear.png" width="50" height="50">
-        <img src="Assets/PngItem_58706.png" width="50" height="50">
-        <img src="Assets/PngItem_3713836.png" width="50" height="50">
-        <img src="Assets/PngItem_59894.png" width="50" height="50">
+            <img src="Assets/kanye bear.png" class="pageTwoImages">
+            <img src="Assets/PngItem_58706.png" class="pageTwoImages">
+            <img src="Assets/PngItem_3713836.png" class="pageTwoImages">
+            <img src="Assets/PngItem_59894.png" class="pageTwoImages">
         </div>
 
         <button style="text-align:center" class="btnStart" id="searchBtn">Click to get Breweries</button>
-
+        
       </div>
     </container>
+    <button style="text-align:center" class="btnStart" id="tryAgain">Try another search</button>
+    <container class="resultsPage hide" id="resultsPage">
+        <h1 class="header">Brew Recomendations</h1> 
 
-    <container class="resultsPage" id="resultsPage">
-        <h1 class="header">Brew Recomendations</h1>
+       
 
         <!--Will this be a constant? Can we have this class in two spots?-->    
         <p class = "quoteKanye" style="text-align:center">-Kanye</p>
         <br>
 
         <!--Not sure how to display results-->
-        <div class ="serchResultName" style="text-align:center">Name</div>
-        <div class ="serchResultAddress" style="text-align:center">Address</div>
-        <div class ="serchResultURL" style="text-align:center">URL</div>
+        <container class="resultsBox">
+        <div class="row" id="result">
+            <div id="serchResultName" class ="serchResultName" style="text-align:center">Name</div>
+            <div id="serchResultAddress" class ="serchResultAddress" style="text-align:center">Address</div>
+            <div id="searchResultPhone" class="searchResultPhone" style="text-align:center">Phone</div>
+            <div id="serchResultURL" class ="serchResultURL" style="text-align:center">URL</div>
+        </div>
+    </container>
+
     </container>
 
     <container class="noResultsPage hide" id="noResultsPage">
         <h1 class="header">Sorry! No breweries matching that search. Please try again!</h1>
-      
-        <p style="text-align:center"><img id="sadKanye" src="Assets/PngItem_1391165.png" alt="Disapointed Kanye"></p>
+        <p style="text-align:center"><img id="sadKanye" src="https://media.giphy.com/media/14tvbepZ8vhU40/giphy.gif" alt="Disapointed Kanye"></p>
+    </container> 
+<br><br> <div class="scrollUp">
+    <button class="btnStart" id="scrollToTop">Back to Top</button>
+</div> 
+<br>
 
-        <br>
-        
-        <button style="text-align:center" class= "btnBack">Go Back</button>
-    </container>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" style="text-align: center;"></script>
 </body>
 </html>
